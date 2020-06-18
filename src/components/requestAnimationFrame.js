@@ -1,49 +1,49 @@
-let lastTime = 0
-const prefixes = 'webkit moz ms o'.split(' ')
+let lastTime = 0;
+const prefixes = "webkit moz ms o".split(" ");
 
-let requestAnimationFrame
-let cancelAnimationFrame
+let requestAnimationFrame;
+let cancelAnimationFrame;
 
-const isServer = typeof window === 'undefined'
+const isServer = typeof window === "undefined";
 if (isServer) {
-	requestAnimationFrame = function() {
-		return
-	}
-	cancelAnimationFrame = function() {
-		return
-	}
+  requestAnimationFrame = function () {
+    return;
+  };
+  cancelAnimationFrame = function () {
+    return;
+  };
 } else {
-	requestAnimationFrame = window.requestAnimationFrame
-	cancelAnimationFrame = window.cancelAnimationFrame
-	let prefix
-	for (let i = 0; i < prefixes.length; i++) {
-		if (requestAnimationFrame && cancelAnimationFrame) {
-			break
-		}
-		prefix = prefixes[i]
-		requestAnimationFrame = requestAnimationFrame || window[prefix + 'RequestAnimationFrame']
-		cancelAnimationFrame = cancelAnimationFrame || window[prefix + 'CancelAnimationFrame'] || window[prefix +
-			'CancelRequestAnimationFrame']
-	}
+  requestAnimationFrame = window.requestAnimationFrame;
+  cancelAnimationFrame = window.cancelAnimationFrame;
+  let prefix;
+  for (let i = 0; i < prefixes.length; i++) {
+    if (requestAnimationFrame && cancelAnimationFrame) {
+      break;
+    }
+    prefix = prefixes[i];
+    requestAnimationFrame =
+      requestAnimationFrame || window[prefix + "RequestAnimationFrame"];
+    cancelAnimationFrame =
+      cancelAnimationFrame ||
+      window[prefix + "CancelAnimationFrame"] ||
+      window[prefix + "CancelRequestAnimationFrame"];
+  }
 
-	if (!requestAnimationFrame || !cancelAnimationFrame) {
-		requestAnimationFrame = function(callback) {
-			const currTime = new Date().getTime()
-			const timeToCall = Math.max(0, 16 - (currTime - lastTime))
-			const id = window.setTimeout(() => {
-				callback(currTime + timeToCall)
-			}, timeToCall)
-			lastTime = currTime + timeToCall
-			return id
-		}
+  if (!requestAnimationFrame || !cancelAnimationFrame) {
+    requestAnimationFrame = function (callback) {
+      const currTime = new Date().getTime();
+      const timeToCall = Math.max(0, 16 - (currTime - lastTime));
+      const id = window.setTimeout(() => {
+        callback(currTime + timeToCall);
+      }, timeToCall);
+      lastTime = currTime + timeToCall;
+      return id;
+    };
 
-		cancelAnimationFrame = function(id) {
-			window.clearTimeout(id)
-		}
-	}
+    cancelAnimationFrame = function (id) {
+      window.clearTimeout(id);
+    };
+  }
 }
 
-export {
-	requestAnimationFrame,
-	cancelAnimationFrame
-}
+export { requestAnimationFrame, cancelAnimationFrame };
