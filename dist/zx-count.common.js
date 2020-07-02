@@ -82,7 +82,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "9337");
+/******/ 	return __webpack_require__(__webpack_require__.s = "9896");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1520,14 +1520,14 @@ module.exports = function (name) {
 
 /***/ }),
 
-/***/ "9337":
+/***/ "9896":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/_@vue_cli-service@4.4.4@@vue/cli-service/lib/commands/build/setPublicPath.js
+// CONCATENATED MODULE: ./node_modules/_@vue_cli-service@4.4.6@@vue/cli-service/lib/commands/build/setPublicPath.js
 // This file is imported into lib/wc client bundles.
 
 if (typeof window !== 'undefined') {
@@ -1551,7 +1551,7 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-// CONCATENATED MODULE: ./node_modules/_cache-loader@4.1.0@cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"936da60c-vue-loader-template"}!./node_modules/_vue-loader@15.9.2@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_cache-loader@4.1.0@cache-loader/dist/cjs.js??ref--0-0!./node_modules/_vue-loader@15.9.2@vue-loader/lib??vue-loader-options!./src/components/count.vue?vue&type=template&id=1fec130c&
+// CONCATENATED MODULE: ./node_modules/_cache-loader@4.1.0@cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"15ed0be4-vue-loader-template"}!./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_cache-loader@4.1.0@cache-loader/dist/cjs.js??ref--0-0!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./src/components/count.vue?vue&type=template&id=1fec130c&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('span',[_vm._v(_vm._s(_vm.displayValue))])}
 var staticRenderFns = []
 
@@ -1623,7 +1623,7 @@ if (isServer) {
 }
 
 
-// CONCATENATED MODULE: ./node_modules/_cache-loader@4.1.0@cache-loader/dist/cjs.js??ref--12-0!./node_modules/_thread-loader@2.1.3@thread-loader/dist/cjs.js!./node_modules/_babel-loader@8.1.0@babel-loader/lib!./node_modules/_cache-loader@4.1.0@cache-loader/dist/cjs.js??ref--0-0!./node_modules/_vue-loader@15.9.2@vue-loader/lib??vue-loader-options!./src/components/count.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_cache-loader@4.1.0@cache-loader/dist/cjs.js??ref--12-0!./node_modules/_thread-loader@2.1.3@thread-loader/dist/cjs.js!./node_modules/_babel-loader@8.1.0@babel-loader/lib!./node_modules/_cache-loader@4.1.0@cache-loader/dist/cjs.js??ref--0-0!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./src/components/count.vue?vue&type=script&lang=js&
 
 
 
@@ -1823,7 +1823,7 @@ if (isServer) {
 });
 // CONCATENATED MODULE: ./src/components/count.vue?vue&type=script&lang=js&
  /* harmony default export */ var components_countvue_type_script_lang_js_ = (countvue_type_script_lang_js_); 
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.2@vue-loader/lib/runtime/componentNormalizer.js
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/runtime/componentNormalizer.js
 /* globals __VUE_SSR_CONTEXT__ */
 
 // IMPORTANT: Do NOT use ES2015 features in this file (except for modules).
@@ -1950,7 +1950,7 @@ var component = normalizeComponent(
 if (typeof window !== "undefined" && window.Vue) {
   window.Vue.component("zx-count", components_count);
 }
-// CONCATENATED MODULE: ./node_modules/_@vue_cli-service@4.4.4@@vue/cli-service/lib/commands/build/entry-lib.js
+// CONCATENATED MODULE: ./node_modules/_@vue_cli-service@4.4.6@@vue/cli-service/lib/commands/build/entry-lib.js
 
 
 /* harmony default export */ var entry_lib = __webpack_exports__["default"] = (components_export);
