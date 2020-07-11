@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <byui-count
+    <vab-count
       :startVal="startVal"
       :endVal="endVal"
       :duration="duration"
@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  name: "app",
+  name: "App",
   data() {
     return {
       startVal: 0,

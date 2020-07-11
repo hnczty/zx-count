@@ -1,7 +1,7 @@
 {
   "name": "zx-count",
   "author": "chuzhixin <1204505056@qq.com>",
-  "version": "0.3.6",
+  "version": "0.3.7",
   "homepage": "http://chu1204505056.gitee.io/vue-admin-beautiful",
   "main": "dist/zx-count.umd.min.js",
   "repository": {

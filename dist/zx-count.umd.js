@@ -1536,6 +1536,9 @@ module.exports = function (name) {
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, "VabCount", function() { return /* reexport */ components_count; });
+
 // CONCATENATED MODULE: ./node_modules/_@vue_cli-service@4.4.6@@vue/cli-service/lib/commands/build/setPublicPath.js
 // This file is imported into lib/wc client bundles.
 
@@ -1954,10 +1957,15 @@ var component = normalizeComponent(
 /* harmony default export */ var components_count = (component.exports);
 // CONCATENATED MODULE: ./src/components/export.js
 
-/* harmony default export */ var components_export = (components_count);
+/* harmony default export */ var components_export = ({
+  install: function install(Vue) {
+    Vue.component("vab-count", components_count);
+  }
+});
+
 
 if (typeof window !== "undefined" && window.Vue) {
-  window.Vue.component("zx-count", components_count);
+  window.Vue.component("vab-count", components_count);
 }
 // CONCATENATED MODULE: ./node_modules/_@vue_cli-service@4.4.6@@vue/cli-service/lib/commands/build/entry-lib.js
 
